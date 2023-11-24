@@ -1,7 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Oswald&display=swap");
-/* font-family: "Merriweather", serif;
-font-family: "Oswald", sans-serif; */
-* {
-  margin: 0px;
-  padding: 0px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-item {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* //////////////OVERLAY */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.big-image {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button {
+  background-color: #333;
+  margin-right: 2rem;
+
+}
+.bigImage{
+  width: 3rem;
+  height: 2rem;
 }

@@ -5,25 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>animals of the world</title>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Animals of the world</title>
     <link rel="stylesheet" href="assets/css/site.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
-
     <script src="assets/js/gallery.js" defer></script>
-
-
-
 </head>
 
 <body>
     <header>
         <h1>Animals of the world</h1>
-        <p>A gallery of fantastic animals</p>
+        <p>A gallery of fantastic Animals</p>
     </header>
-
-    <section id="app"></section>
-
+<!--() &times;  eto znachit x eto v js )katoriy ti stavlyaesh  mesto nego mojno prosto postavit x v buttone -->
+    <div class="gallery-item">
+        <div id="gallery" class="gallery-container"></div>
+        <div id="overlay" class="overlay">
+            <img id="bigImage" class="bigImage" src="" alt="bigImage">
+            <button class="close" onclick="closeOverlay()">&times;</button>
+        </div>
+    </div>
 
 </body>
 
